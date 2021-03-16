@@ -27,6 +27,7 @@ RUN apt-get update \
     pandas=1.1.4 \
     GeoPandas=0.9.0 \
     Shapely=1.7.1 \
+    wget \
 &&  conda clean -a -y \
 &&  rm /opt/conda/pkgs/* -rf \
 &&  mkdir /opt/notebooks
