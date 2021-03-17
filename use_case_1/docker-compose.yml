@@ -2,7 +2,7 @@
 version: '3'
 services:
   jupyter:
-    build: './Docker_file_use_case_1/'
+    build: '.'
     environment:
       PYTHONPATH: '/opt/notebooks'
     volumes:
