@@ -23,6 +23,13 @@ RUN apt-get update \
     python-dateutil=2.8.1 \
     scipy=1.5.2 \
     urllib3=1.25.10 \
+    sentinelsat=0.14.0 \
+    pandas=1.1.4 \
+    GeoPandas=0.9.0 \
+    Shapely=1.7.1 \
+    wget=1.20.1 \
+    glymur=0.9.3 \
+    "satpy[all]" \
 &&  conda clean -a -y \
 &&  rm /opt/conda/pkgs/* -rf \
 &&  mkdir /opt/notebooks
