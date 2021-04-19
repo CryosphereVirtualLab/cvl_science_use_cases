@@ -28,10 +28,8 @@ RUN apt-get update \
     GeoPandas=0.9.0 \
     Shapely=1.7.1 \
     wget=1.20.1 \
-    glymur=0.9.3 \
-    "satpy[all]" \
 &&  conda clean -a -y \
 &&  rm /opt/conda/pkgs/* -rf \
 &&  mkdir /opt/notebooks
 WORKDIR /opt/notebooks
-CMD /opt/conda/bin/jupyter notebook --allow-root --no-browser --ip=0.0.0.0 --notebook-dir=/opt/notebooks
+ENTRYPOINT ["sh", "-c", "/opt/conda/bin/jupyter notebook --NotebookApp.token='' --allow-root --no-browser --ip=0.0.0.0 --notebook-dir=/opt/notebooks"]
