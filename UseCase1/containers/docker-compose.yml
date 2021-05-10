@@ -6,7 +6,7 @@ services:
     environment:
       PYTHONPATH: '/opt/notebooks'
     volumes:
-      - './notebooks/:/opt/notebooks'
+      - '../notebooks/:/opt/notebooks'
     working_dir: '/opt/notebooks'
     ports:
       - '8888:8888'
