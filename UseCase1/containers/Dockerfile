@@ -14,6 +14,7 @@ RUN apt-get update \
 &&  conda config --add channels conda-forge  \
 &&  conda install -y \
     jupyter \
+    satpy=0.29.0 \
     cartopy=0.18.0 \
     ipython=7.17.0 \
     matplotlib=3.3.1 \
